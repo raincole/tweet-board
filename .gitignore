@@ -17,3 +17,7 @@
 
 # By SimpleCov
 coverage
+
+# IDEA Intellij
+.idea
+*.iml
