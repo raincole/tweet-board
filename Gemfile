@@ -47,8 +47,9 @@ end
 # Use debugger
 gem 'debugger', group: [:development, :test]
 
+gem 'rspec-rails', group: [:development, :test]
+
 group :test do
   gem 'rspec'
-  gem 'rspec-rails'
   gem 'simplecov', :require => false, :group => :test
 end
