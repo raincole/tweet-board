@@ -6,10 +6,12 @@ gem 'rails', '4.0.0.rc1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
+gem 'slim-rails'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0.rc1'
 gem 'bootstrap-sass', '~> 2.3.1.2'
-gem 'compass-rails'
+gem 'compass-rails', github: "milgner/compass-rails", branch: "rails4"
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

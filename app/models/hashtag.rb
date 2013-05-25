@@ -1,0 +1,2 @@
+class Hashtag < Subscription
+end

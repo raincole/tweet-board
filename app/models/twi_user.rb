@@ -1,0 +1,2 @@
+class TwiUser < Subscription
+end

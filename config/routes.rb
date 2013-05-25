@@ -1,4 +1,11 @@
 TweeBoard::Application.routes.draw do
+  resources :subscriptions do
+    resource :tweets, :only => :index
+  end
+
+  resources :hashtags, :only => [:create, :destroy]
+  resources :twi_users, :only => [:create, :destroy]
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
