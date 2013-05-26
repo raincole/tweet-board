@@ -1,5 +1,5 @@
 class Subscription < ActiveRecord::Base
-  has_many :tweets
+  has_many :tweets, :order => 'post_time DESC'
 
   before_validation :determine_type
 
