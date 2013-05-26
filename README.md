@@ -1,28 +1,16 @@
-== README
+# Tweet Board
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an example of **Rails-as-a-frontend** app, which means you have a separate source to feed data to database, instead of manipulate all data from Rails models only. In this example I use a Twitter crawler as data source.
 
-Things you may want to cover:
+## Usage
 
-* Ruby version
+You need to [register a Twitter application](https://dev.twitter.com/apps/new) first.
 
-* System dependencies
+Start Rails server:
 
-* Configuration
+    rails s
+    
+And the crawler:
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+    bin/tweet_crawler.rb consumer_key consumer_secret oauth_token oauth_secret
+    
