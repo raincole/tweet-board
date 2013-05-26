@@ -1,3 +1,45 @@
 // Place all the styles related to the subscriptions controller here.
 // They will automatically be included in application.css.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.subboard {
+  float: left;
+  width: 430px;
+  height: 450px;
+  margin: 15px;
+  background: white;
+  @include box-shadow(5px 5px 5px gray);
+
+  overflow: auto;
+
+  .header {
+    padding: 10px;
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .tweet-cell {
+    padding: 5px 10px 10px;
+    border-bottom: 1px solid #e8e8e8;
+    @include clearfix;
+
+    .avatar {
+      display: block;
+      float: left;
+      margin: 3px 10px 3px 0px;
+      @include border-radius(3px);
+    }
+
+  }
+  
+  a {
+    color: #3a3a3a;
+    font-weight: bold;
+
+    &:hover {
+      color: dodgerblue;
+      text-decoration: underline;
+    }
+  }
+}

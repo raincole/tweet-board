@@ -1,0 +1,9 @@
+<div class="tweet-cell">
+    <img class="avatar" src="<%= tweet.author_avatar %>"/>
+    <div class="tweet-inner">
+        <div class="author-info">
+            <%= link_to tweet.author_name, twi_user_url(tweet.author_screen_name), :class => 'author-name' %>
+        </div>
+    <%= tweet.content %>
+    </div>
+</div>

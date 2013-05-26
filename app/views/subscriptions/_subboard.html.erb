@@ -1,1 +1,8 @@
-<%= subscription.name %>
+<div class="subboard">
+    <div class="header">
+        <%= link_to subscription.name, twi_search_url(subscription.name) %>
+    </div>
+    <% subscription.tweets.each do |t| %>
+        <%= render :partial => 'tweets/tweet', :locals => { :tweet => t } %>
+    <% end %>
+</div>
