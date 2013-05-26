@@ -1,0 +1,6 @@
+<div id="header" class="navbar navbar-fixed-top">
+    <%= simple_form_for @subscription, :html => { :class => 'navbar-form' } do |f| %>
+    <%= f.input :name, :label => false, :input_html => { :class => 'span6' } %>
+    <%= f.button :submit %>
+    <% end %>
+</div>

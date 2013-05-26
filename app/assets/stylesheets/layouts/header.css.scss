@@ -1,0 +1,18 @@
+#header {
+  background: black;
+  padding: 10px;
+  text-align: center;
+
+  form.subscription {
+    margin: auto;
+    display: inline-block;
+
+    .input {
+      display: inline-block;
+    }
+
+    input {
+      margin: 0;
+    }
+  }
+}
