@@ -62,3 +62,6 @@ group :development do
 end
 
 gem 'simple_form'
+
+gem "twitter", "~> 4.6.2"
+
