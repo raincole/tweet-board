@@ -54,4 +54,8 @@ group :test do
   gem 'simplecov', :require => false, :group => :test
 end
 
+group :development do
+  gem 'meta_request'
+end
+
 gem 'simple_form'
